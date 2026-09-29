@@ -44,7 +44,7 @@ patent-creator download-mpep
 **Verify Integrity:**
 ```bash
 python -c "
-import fitz
+import pymupdf as fitz
 from pathlib import Path
 for pdf in Path('pdfs').glob('*.pdf'):
     try:
